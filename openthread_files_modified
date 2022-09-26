@@ -1,0 +1,17 @@
+New files:
+src/core/radio/ble_sercure.hpp
+src/core/radio/ble_sercure.cpp
+include/openthread/ble_sercure.h
+src/core/api/ble_secure_api.cpp
+include/openthread/platform/ble.h       // Subset of ble.h in thread-reference-20200818
+
+Modified files:
+third_party/mbedtls/mbedtls-config.h    // Increaese MBEDTLS_SSL_MAX_CONTENT_LEN
+src/core/config/dtls.h                  // Extended to support configuartion for BLE secure
+src/core/meshcop/dtls.hpp               // Extended to support TLS and configuartion for BLE secure
+src/core/meshcop/dtls.cpp               // Extended to support TLS and configuartion for BLE secure
+scr/core/common/instance.hpp            // BleSecure application instance added
+scr/core/common/instance.cpp            // BleSecure application instance added
+scr/core/common/message.hpp             // Message::Type::kTypeBle added (currently no metadata)
+src/core/CMakeLists.txt                 // New files added
+src/core/BUILD.gn                       // New files and configuration options added

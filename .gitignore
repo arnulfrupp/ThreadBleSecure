@@ -1,0 +1,5 @@
+build
+.vscode
+.unotes
+dongle_com_port.txt
+*.code-workspace
